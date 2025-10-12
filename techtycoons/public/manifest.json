@@ -3,8 +3,14 @@
   "short_name": "TechTycoons",
   "icons": [
     {
-      "src": "/Images/anime/LogoNew.png",
+      "src": "/Images/favicon_TT/android-chrome-192x192.png",
       "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/Images/favicon_TT/android-chrome-512x512.png",
+      "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     }
