@@ -1,0 +1,249 @@
+"use client";
+
+import { useState } from "react";
+import Image from "next/image";
+
+// Event type images mapping
+const eventImages: { [key: string]: string } = {
+  workshop: "/Images/anime/workshop.png",
+  seminar: "/Images/anime/seminars.png",
+  hackathon: "/Images/anime/hackathon.png",
+  quiz: "/Images/anime/quiz.png",
+  coding: "/Images/anime/codingComp.png",
+  project: "/Images/anime/project.png",
+  default: "/Images/anime/default-event.png"
+};
+
+// Helper function to determine event type
+const getEventType = (title: string): string => {
+  title = title.toLowerCase();
+  if (title.includes("workshop")) return "workshop";
+  if (title.includes("seminar")) return "seminar";
+  if (title.includes("hackathon")) return "hackathon";
+  if (title.includes("quiz") || title.includes("kwiz")) return "quiz";
+  if (title.includes("coding") || title.includes("code")) return "coding";
+  if (title.includes("project")) return "project";
+  return "default";
+};
+
+// Events data
+const events = [
+  {
+    title: "Inaugural of club and Launch of TechTycoons Website",
+    details: "Inaugural of club and Launch of TechTycoons Website, around 100 students attend the event, Dr. Hanumantha Rao, Principal-MECS guest",
+    date: "12/30/2022, 11:00:00 AM",
+  },
+  {
+    title: "Workshop on IBM SkillBuild",
+    details: "Workshop on IBM SkillsBuild, students received certificates and badges after course completion. 136 students attended.",
+    date: "10/23/2024, 10:00:00 AM",
+  },
+  {
+    title: "Seminar on AI",
+    details: "Seminar by Dr. P. Srikanth, Director, INAS Technologies on AI and future. ~136 students attended.",
+    date: "10/23/2024, 9:00:00 AM",
+  },
+  {
+    title: "Workshop on Stress management and resilience",
+    details: "Workshop by Dr. Thomas J Bussen (Visiting professor Singania University), attended by 80+ students",
+    date: "11/27/2024, 10:00:00 AM",
+  },
+  {
+    title: "HackerRank workshop",
+    details: "Programming for Problem Solving using HackerRank platform for BE III SEM IT A",
+    date: "12/18/2024, 10:00:00 AM",
+  },
+  {
+    title: "Practices for Empowering Women's health",
+    details: "Seminar on Empowering Women's Health by Dr. Likhitha Bejgaom, attended by 70+ girl students from CME & IT (2nd Year)",
+    date: "3/7/2025, 10:40:00 AM",
+  },
+  {
+    title: "INTRO TO MACHINE LEARNING",
+    details: "Hands-on Workshop on Intro to Machine Learning",
+    date: "4/10/2025, 1:10:00 PM",
+  },
+  {
+    title: "Project Expo 3",
+    details: "Innovation नवोन्मेष: Project Expo inviting final year students to show their projects, best ones get prizes",
+    date: "6/13/2025, 10:00:00 AM",
+  },
+  {
+    title: "Seminar - Transition from College Life to Work Life",
+    details: "Transition seminar for outgoing students",
+    date: "12/22/2022, 11:30:00 AM",
+  },
+  {
+    title: "Kwiz: Competition",
+    details: "",
+    date: "12/30/2022, 1:00:00 PM",
+  },
+  {
+    title: "Webinar-Research Article- Writing Methods",
+    details: "",
+    date: "8/4/2022, 11:00:00 AM",
+  },
+  {
+    title: "Logo Designing, Load Aim Shoot, Free Fire, CODE XO, Treasure Hunt",
+    details: "",
+    date: "6/23/2023, 9:40:00 AM",
+  },
+  {
+    title: "Master Class on Future Technology",
+    details: "Major upcoming future technologies by Tech Tycoon Student members, attended by 100 students",
+    date: "12/18/2023, 2:10:00 PM",
+  },
+  {
+    title: "Career Guidance in Tech Field",
+    details: "Seminar by Mr. Sai Krishna Alishala, Founder & CEO, Elitceler Technologies, attended by 100+ students",
+    date: "2/15/2024, 2:10:00 PM",
+  },
+  {
+    title: "Smart MECS HACKATHON 2024",
+    details: "First Hackathon at Matrusri Engineering College (Tech Tycoons club IT Dept.) with 85+ participants, judges: Mr. T. Rakesh reddy, Dr. Indumathi, Mr. K Praveen",
+    date: "8/3/2024, 9:00:00 AM",
+  },
+  {
+    title: "Kwiz: Tech Quiz",
+    details: "Quiz competition to crown the quiz king!",
+    date: "11/29/2023, 2:00:00 PM",
+  },
+  {
+    title: "Seminar on current trends in business",
+    details: "By Mr. T. Rakesh reddy (Business Analyst , HNBC), attended by 40+ students",
+    date: "8/3/2024, 11:00:00 AM",
+  },
+  {
+    title: "Musical Coding",
+    details: "Code amongst the worst music you've ever heard, without getting distracted!",
+    date: "10/5/2022, 1:18:42 AM",
+  },
+  {
+    title: "Website Maintenance part 2",
+    details: "Handling events and other dynamic information for the website",
+    date: "5/10/2025, 10:30:00 AM",
+  },
+  {
+    title: "Find The Bug",
+    details: "Debug the code pushed to production without testing. Use given logs to find the bug!",
+    date: "2/8/2023, 1:23:49 AM",
+  },
+];
+
+// Sort events by date in descending order (most recent first)
+const sortedEvents = [...events].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+export default function EventsPage() {
+  const [filter, setFilter] = useState("all"); // all, past, upcoming
+
+  // Filter events based on current date
+  const currentDate = new Date();
+  const filteredEvents = sortedEvents.filter((event) => {
+    const eventDate = new Date(event.date);
+    if (filter === "upcoming") {
+      return eventDate > currentDate;
+    } else if (filter === "past") {
+      return eventDate < currentDate;
+    }
+    return true;
+  });
+
+  return (
+    <main className="min-h-screen bg-[#f6f7fa]">
+      {/* Banner Section */}
+      <section className="relative bg-[#0b0d23] text-white py-20 px-4">
+        <div className="max-w-6xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: "var(--font-orbitron)" }}>
+            Our Events
+          </h1>
+          <p className="text-xl text-gray-300" style={{ fontFamily: "var(--font-rajdhani)" }}>
+            Discover our technical events and activities
+          </p>
+        </div>
+      </section>
+
+      {/* Filters Section */}
+      <section className="py-8 bg-white shadow-sm">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="flex justify-center space-x-4">
+            <button
+              onClick={() => setFilter("all")}
+              className={`px-6 py-2 rounded-full transition-colors ${
+                filter === "all"
+                  ? "bg-blue-600 text-white"
+                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+              }`}
+            >
+              All Events
+            </button>
+            <button
+              onClick={() => setFilter("upcoming")}
+              className={`px-6 py-2 rounded-full transition-colors ${
+                filter === "upcoming"
+                  ? "bg-blue-600 text-white"
+                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+              }`}
+            >
+              Upcoming
+            </button>
+            <button
+              onClick={() => setFilter("past")}
+              className={`px-6 py-2 rounded-full transition-colors ${
+                filter === "past"
+                  ? "bg-blue-600 text-white"
+                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+              }`}
+            >
+              Past Events
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Events List */}
+      <section className="py-12 px-4">
+        <div className="max-w-4xl mx-auto space-y-6">
+          {filteredEvents.map((event, idx) => (
+            <div
+              key={idx}
+              className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden border border-gray-100"
+            >
+              <div className="flex flex-col md:flex-row">
+                <div className="md:w-1/3 relative">
+                  <img
+                    src={eventImages[getEventType(event.title)]}
+                    alt={event.title}
+                    className="w-full h-48 md:h-full object-cover"
+                  />
+                </div>
+                <div className="md:w-2/3 p-6">
+                  <div className="flex justify-between items-start">
+                    <h2 className="text-xl font-bold text-gray-900 mb-2" style={{ fontFamily: "var(--font-rajdhani)" }}>
+                      {event.title}
+                    </h2>
+                    <span className="text-sm text-gray-500 whitespace-nowrap ml-4">
+                      {new Date(event.date).toLocaleDateString("en-US", {
+                        day: "numeric",
+                        month: "short",
+                        year: "numeric",
+                      })}
+                    </span>
+                  </div>
+                  {event.details && (
+                    <p className="text-gray-600 mt-2">{event.details}</p>
+                  )}
+                  <div className="mt-4 text-sm text-gray-500">
+                    🕒 {new Date(event.date).toLocaleTimeString("en-US", {
+                      hour: "numeric",
+                      minute: "2-digit",
+                      hour12: true,
+                    })}
+                  </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </main>
+  );
+}
