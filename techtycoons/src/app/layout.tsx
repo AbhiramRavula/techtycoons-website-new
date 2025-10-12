@@ -29,6 +29,42 @@ const rajdhani = Rajdhani({
 export const metadata: Metadata = {
   title: "Tech Tycoons",
   description: "Technical Club of Department of IT, MECS",
+  manifest: "/manifest.json",
+  icons: {
+    icon: [
+      {
+        rel: 'icon',
+        url: "/Images/favicon_TT/favicon.ico",
+        sizes: "any",
+        type: "image/x-icon",
+      },
+      {
+        rel: 'icon',
+        url: "/Images/favicon_TT/favicon-32x32.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+      {
+        rel: 'icon',
+        url: "/Images/favicon_TT/favicon-16x16.png",
+        sizes: "16x16",
+        type: "image/png",
+      }
+    ],
+    shortcut: [
+      {
+        rel: 'shortcut icon',
+        url: "/Images/favicon_TT/favicon.ico",
+        type: "image/x-icon",
+      }
+    ],
+    apple: {
+      rel: 'apple-touch-icon',
+      url: "/Images/favicon_TT/apple-touch-icon.png",
+      sizes: "180x180",
+      type: "image/png",
+    }
+  },
 }; 
 
 export default function RootLayout({
@@ -37,8 +73,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${orbitron.variable} ${rajdhani.variable} antialiased`}>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#0b0d23" />
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${orbitron.variable} ${rajdhani.variable} antialiased`} suppressHydrationWarning>
         <Nav />
         {children}
         <Footer />

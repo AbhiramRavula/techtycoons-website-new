@@ -85,53 +85,61 @@ export default function HomeContent() {
       </section>
 
       {/* Events Section */}
-      <section className="py-20 bg-white  text-gray-900">
+      <section className="py-12 md:py-20 bg-white text-gray-900">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4">Events by us</h2>
-          <div className="h-1 w-24 bg-blue-600 mx-auto mb-12" />
-        <p className="text-xl mb-4">Here at Tech Tycoons, we offer a wide range of events to build technical and communication skills amongst our participants.</p>
-        <p className="text-xl mb-4">These events also establish industry-ready skills amongst our audience.</p>
-        <p className="text-xl mb-8">A sneak-peak at a couple of events organized by us include:</p>
-        {/* Event 1 */}
-        <div className="mb-12">
-          <h3 className="text-2xl font-bold mb-2">1) Technical Quiz</h3>
-          <img src="Images/anime/quiz.png" alt="Technical Quiz" className="w-96 mx-auto mb-4" />
-          <p className="text-lg text-center max-w-3xl mx-auto">
-            Quizzes would be designed to cultivate student's mind by asking inquisitive questionnaires. We will test student's problem solving and theoretical knowledge in tech.<br />
-            These would be conducted in increasing order of difficulty
-          </p>
-        </div>
-        {/* Event 2 */}
-        <div className="mb-12  text-gray-900">
-          <h3 className="text-2xl font-bold mb-2">2) Seminars</h3>
-          <img src="Images/anime/seminars.png" alt="Seminars" className="w-96 mx-auto mb-4" />
-          <p className="text-lg text-center max-w-3xl mx-auto">
-            Seminars would be geared towards a wide range of IT domains. This would introduce applied-programming practices to make them ready for the real experiences.
-          </p>
-        </div>
-        {/* Event 3 */}
-        <div className="mb-12">
-          <h3 className="text-2xl font-bold mb-2">3) Hackathons</h3>
-          <img src="Images/anime/hackathon.png" alt="Hackathons" className="w-96 mx-auto mb-4" />
-          <p className="text-lg text-center max-w-3xl mx-auto">
-            Hackathons would be organized to improve collaboration abilities of students. They will serve as a medium to introduce cutting edge technologies to students and make them industry-ready
-          </p>
-        </div>
-        {/* Event 4 */}
-        <div className="mb-12">
-          <h3 className="text-2xl font-bold mb-2">4) Coding competitions</h3>
-          <img src="Images/anime/codingComp.png" alt="Coding Competitions" className="w-96 mx-auto mb-4" />
-          <p className="text-lg text-center max-w-3xl mx-auto">
-            Coding competitions are organized to boost student's problem solving abilities. This would prepare them to face world-class coding competitions like ICPC, Google CodeJam, Meta HackerCup.
-          </p>
-        </div>
-        {/* Event 5 */}
-        <div className="mb-12">
-          <h3 className="text-2xl font-bold mb-2">5) Paper Presentations</h3>
-          <img src="Images/anime/seminars.png" alt="Paper Presentations" className="w-96 mx-auto mb-4" />
-          <p className="text-lg text-center max-w-3xl mx-auto">
-            Paper presentations will be organized to aid innovative thinking in students. With a number of themes to choose from, paper presentations teach the process of innovation to students.
-          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Events by us</h2>
+          <div className="h-1 w-24 bg-blue-600 mx-auto mb-8 md:mb-12" />
+          <div className="space-y-4 md:space-y-6 text-center max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl">Here at Tech Tycoons, we offer a wide range of events to build technical and communication skills amongst our participants.</p>
+            <p className="text-lg md:text-xl">These events also establish industry-ready skills amongst our audience.</p>
+            <p className="text-lg md:text-xl mb-8">A sneak-peak at a couple of events organized by us include:</p>
+          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Event 1 */}
+          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+            <h3 className="text-xl md:text-2xl font-bold mb-4">1) Technical Quiz</h3>
+            <img src="Images/anime/quiz.png" alt="Technical Quiz" className="w-full h-48 object-contain mb-4" />
+            <p className="text-base md:text-lg text-center">
+              Quizzes would be designed to cultivate student's mind by asking inquisitive questionnaires. We will test student's problem solving and theoretical knowledge in tech.
+              These would be conducted in increasing order of difficulty.
+            </p>
+          </div>
+
+          {/* Event 2 */}
+          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+            <h3 className="text-xl md:text-2xl font-bold mb-4">2) Seminars</h3>
+            <img src="Images/anime/seminars.png" alt="Seminars" className="w-full h-48 object-contain mb-4" />
+            <p className="text-base md:text-lg text-center">
+              Seminars would be geared towards a wide range of IT domains. This would introduce applied-programming practices to make them ready for the real experiences.
+            </p>
+          </div>
+
+          {/* Event 3 */}
+          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+            <h3 className="text-xl md:text-2xl font-bold mb-4">3) Hackathons</h3>
+            <img src="Images/anime/hackathon.png" alt="Hackathons" className="w-full h-48 object-contain mb-4" />
+            <p className="text-base md:text-lg text-center">
+              Hackathons would be organized to improve collaboration abilities of students. They will serve as a medium to introduce cutting edge technologies to students and make them industry-ready.
+            </p>
+          </div>
+
+          {/* Event 4 */}
+          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+            <h3 className="text-xl md:text-2xl font-bold mb-4">4) Coding competitions</h3>
+            <img src="Images/anime/codingComp.png" alt="Coding Competitions" className="w-full h-48 object-contain mb-4" />
+            <p className="text-base md:text-lg text-center">
+              Coding competitions are organized to boost student's problem solving abilities. This would prepare them to face world-class coding competitions like ICPC, Google CodeJam, Meta HackerCup.
+            </p>
+          </div>
+
+          {/* Event 5 */}
+          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+            <h3 className="text-xl md:text-2xl font-bold mb-4">5) Paper Presentations</h3>
+            <img src="Images/anime/seminars.png" alt="Paper Presentations" className="w-full h-48 object-contain mb-4" />
+            <p className="text-base md:text-lg text-center">
+              Paper presentations will be organized to aid innovative thinking in students. With a number of themes to choose from, paper presentations teach the process of innovation to students.
+            </p>
+          </div>
         </div>
         </div>
       </section>
@@ -157,7 +165,7 @@ export default function HomeContent() {
             <img src="/Images/SrinivasSir.jpg" alt="Dr. J. Srinivas" className="rounded-full w-40 h-40 object-cover mb-2 border-4 border-white shadow-lg" />
             <div className="text-center">
               <p className="font-bold text-blue-800 text-lg">Dr. J. Srinivas</p>
-              <p className="text-xs">Associate Professor & Head of the Department</p>
+              <p className="text-xs">Associate Professor & Head of the Department IT</p>
             </div>
             <blockquote className="italic text-lg text-center mt-8 md:mt-0">
               <span className="text-3xl font-serif">”</span><br />
@@ -169,24 +177,51 @@ export default function HomeContent() {
       </section>
 
       {/* Contact Us Section */}
-      <section className="bg-[#f6f7fa] text-black py-16 px-8">
-        <h2 className="text-3xl font-bold mb-2">Contact Us</h2>
-        <div className="h-1 w-full bg-yellow-400 mb-8" />
-        <div className="flex flex-col items-center">
-          <p className="text-xl mb-4">Get in touch with us for more information</p>
-          <p className="text-xl mb-4">If you need help or have a question, we are here with the following social media presence</p>
-          <div className="flex space-x-6">
-            <a href="mailto:techtycoons@matrusri.edu.in" className="hover:text-blue-500 transition-colors duration-300">
-              <img src="/mail.svg" alt="Email" width="32" height="32" className="w-8 h-8 hover:scale-110 transition-transform duration-300" />
-            </a>
-            <a href="https://www.linkedin.com/in/tech-tycoons-club-423233362/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors duration-300"> <img src="/linkedin.svg" alt="LinkedIn" width="32" height="32" className="w-8 h-8 hover:scale-110 transition-transform duration-300" />
-            </a>
-            <a href="https://www.instagram.com/techtycoons_mecs/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors duration-300">
-              <img src="/instagram.svg" alt="Instagram" width="32" height="32" className="w-8 h-8 hover:scale-110 transition-transform duration-300" />
-            </a>
-            <a href="https://github.com/techtycoons" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors duration-300">
-              <img src="/github.svg" alt="GitHub" width="32" height="32" className="w-8 h-8 hover:scale-110 transition-transform duration-300" />
-            </a>
+      <section className="bg-[#f6f7fa] text-black py-12 md:py-16 px-4 md:px-8">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold mb-2 text-center">Contact Us</h2>
+          <div className="h-1 w-full bg-yellow-400 mb-8" />
+          <div className="flex flex-col items-center space-y-6">
+            <div className="text-center space-y-4">
+              <p className="text-lg md:text-xl">Get in touch with us for more information</p>
+              <p className="text-lg md:text-xl">If you need help or have a question, we are here with the following social media presence</p>
+            </div>
+            <div className="flex flex-wrap justify-center gap-6 md:gap-8">
+              <a 
+                href="mailto:techtycoons.drive@gmail.com" 
+                className="hover:text-blue-500 transition-colors duration-300"
+                aria-label="Email us"
+              >
+                <img src="/mail.svg" alt="Email" className="w-8 h-8 md:w-10 md:h-10 hover:scale-110 transition-transform duration-300" />
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/tech-tycoons-club-423233362/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-blue-500 transition-colors duration-300"
+                aria-label="Visit our LinkedIn"
+              >
+                <img src="/linkedin.svg" alt="LinkedIn" className="w-8 h-8 md:w-10 md:h-10 hover:scale-110 transition-transform duration-300" />
+              </a>
+              <a 
+                href="https://www.instagram.com/techtycoons_mecs/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-blue-500 transition-colors duration-300"
+                aria-label="Follow us on Instagram"
+              >
+                <img src="/instagram.svg" alt="Instagram" className="w-8 h-8 md:w-10 md:h-10 hover:scale-110 transition-transform duration-300" />
+              </a>
+              <a 
+                href="https://github.com/techtycoons" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-blue-500 transition-colors duration-300"
+                aria-label="View our GitHub"
+              >
+                <img src="/github.svg" alt="GitHub" className="w-8 h-8 md:w-10 md:h-10 hover:scale-110 transition-transform duration-300" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
