@@ -156,8 +156,8 @@ export default function HomeContent() {
               <p className="text-xs">Professor & Head of the Department Information Technology</p>
             </div>
             <blockquote className="italic text-lg text-center mt-8 md:mt-0">
-              <span className="text-3xl font-serif">”</span><br />
-              <span className="font-semibold">Let noble thoughts come from all directions </span><br />
+              <span className="text-3xl font-serif">”</span>
+              <span className="font-semibold">Let noble thoughts come from all directions </span>
               <span className="text-3xl font-serif">”</span>
             </blockquote>
           </div>
@@ -167,11 +167,13 @@ export default function HomeContent() {
               <p className="font-bold text-blue-800 text-lg">Mrs.K.Mounika </p>
               <p className="text-xs">Assistant Professor Dept IT</p>
             </div>
-            {/* <blockquote className="italic text-lg text-center mt-8 md:mt-0">
-              <span className="text-3xl font-serif">”</span><br />
-              Let noble thoughts come from all directions<br />
+            <blockquote className="italic text-lg text-center mt-8 md:mt-0">
+              <span className="text-3xl font-serif ">”</span>
+              <span className="font-semibold">
+              Innovation begins when diverse talents collide 
+              </span>
               <span className="text-3xl font-serif">”</span>
-            </blockquote> */}
+            </blockquote>
           </div>
         </div>
       </section>
