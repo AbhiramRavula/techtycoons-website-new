@@ -5,6 +5,12 @@ const getGoogleDriveDirectUrl = (shareUrl: string) => {
 };
 
 export const events = [
+   {
+    title: "FSD lab IT-A workshop ",
+    details: "Peer learning working on Full Stack Development lab for IT-A students, conducted by TechTycoons club members. depolyes a student result managment system on vercel with supabase integration with REACT JS for frontend and NODEJS for backend. ",
+    date: "12/30/2022, 11:00:00 AM",
+    image:  getGoogleDriveDirectUrl("https://drive.google.com/file/d/1rQwZMGx6vDixjXHiRDrAKnf_-AzKNl3o/view?usp=sharing")
+  },
   {
     title: "Inaugural of club and Launch of TechTycoons Website",
     details: "Inaugural of club and Launch of TechTycoons Website, around 100 students attend the event, Dr. Hanumantha Rao, Principal-MECS guest",
