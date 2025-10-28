@@ -149,29 +149,29 @@ export default function HomeContent() {
         {/* <h2 className="text-3xl font-bold mb-2">Message from the H.O.D and the Club Incharge</h2> */}
         <div className="h-1 w-full bg-yellow-400 mb-8" />
         <div className="flex flex-col items-center gap-12">
-          {/* <div className="flex flex-col items-center">
-            <img src="/Images/ShyamSir.jpg" alt="Dr. G. Shyama Chandra Prasad" className="rounded-full w-40 h-40 object-cover mb-2 border-4 border-white shadow-lg" />
-            <div className="text-center">
-              <p className="font-bold text-blue-800 text-lg">Dr. G. Shyama Chandra Prasad</p>
-              <p className="text-xs">Professor & Head of the Department</p>
-            </div>
-            <blockquote className="italic text-lg text-center mt-8 md:mt-0">
-              <span className="text-3xl font-serif">”</span><br />
-              <span className="font-semibold">As quoted by Ken Poirot, "Today is the opportunity to build the tomorrow you want", I wish you all a best tomorrow.</span><br />
-              <span className="text-3xl font-serif">”</span>
-            </blockquote>
-          </div> */}
           <div className="flex flex-col items-center">
             <img src="/Images/SrinivasSir.jpg" alt="Dr. J. Srinivas" className="rounded-full w-40 h-40 object-cover mb-2 border-4 border-white shadow-lg" />
             <div className="text-center">
               <p className="font-bold text-blue-800 text-lg">Dr. J. Srinivas</p>
-              <p className="text-xs">Associate Professor & Head of the Department IT</p>
+              <p className="text-xs">Professor & Head of the Department Information Technology</p>
             </div>
             <blockquote className="italic text-lg text-center mt-8 md:mt-0">
               <span className="text-3xl font-serif">”</span><br />
-              Let noble thoughts come from all directions<br />
+              <span className="font-semibold">Let noble thoughts come from all directions </span><br />
               <span className="text-3xl font-serif">”</span>
             </blockquote>
+          </div>
+          <div className="flex flex-col items-center">
+            <img src="/Images/Mrs.k.mounika.jpg" alt="Mounika " className="rounded-full w-40 h-40 object-cover mb-2 border-4 border-white shadow-lg" />
+            <div className="text-center">
+              <p className="font-bold text-blue-800 text-lg">Mrs.K.Mounika </p>
+              <p className="text-xs">Assistant Professor Dept IT</p>
+            </div>
+            {/* <blockquote className="italic text-lg text-center mt-8 md:mt-0">
+              <span className="text-3xl font-serif">”</span><br />
+              Let noble thoughts come from all directions<br />
+              <span className="text-3xl font-serif">”</span>
+            </blockquote> */}
           </div>
         </div>
       </section>
