@@ -668,7 +668,7 @@ export default function MembersPage() {
       {
         name: 'Naga Harshan',
         role: 'Member',
-        branch: 'Information Technology',
+        branch: 'Information Technology  ',
         image: memberImages.nagaharshanPic,
         linkedin: 'https://www.linkedin.com/in/avadhanula-naga-harshan-5b8ab431b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
       },
