@@ -55,13 +55,13 @@ const memberImages = {
   tanujPic: '/Images/Tanuj.jpg',
   tribhuvaniPic: '/Images/Tribhuvani.jpg',
   sadgunaPic: '/Images/Sadguna.jpg',
-  navyaPic: '/Images/Navya.jpg',
+  navyaPic: '/Images/navya.jpg',
   narenderreddyPic: '/Images/Narender Reddy.jpg',
   nagaharshanPic: '/Images/NagaHarshan.jpg',
   charishmaPic: '/Images/Charishma.jpg',
   asadPic: '/Images/Asad.jpg',
   arnavPic: '/Images/Arnav.jpg',
-  srihasPic: '/Images/SriHas.jpg',
+  srihasPic: '/Images/Srihas.jpg',
   radhikaPic: '/Images/Radhika.jpg',
 
 };
@@ -394,7 +394,7 @@ const batches = [
 ];
 
 export default function MembersPage() {
-  const [selectedBatch, setSelectedBatch] = useState<string>('2023-27');
+  const [selectedBatch, setSelectedBatch] = useState<string>('2024-28');
 
   // Member data grouped by batch
   const batches = [
