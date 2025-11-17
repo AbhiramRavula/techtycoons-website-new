@@ -63,6 +63,7 @@ const memberImages = {
   arnavPic: '/Images/Arnav.jpg',
   srihasPic: '/Images/SriHas.jpg',
   radhikaPic: '/Images/Radhika.jpg',
+  hamsikaPic: '/Images/Hamsika.jpg',
 
 };
 
@@ -185,7 +186,7 @@ const batches = [
     members: [
       {
         name: 'Amulya',
-        role: 'Member',
+        role: 'Club Head',
         branch: 'Information Technology',
         image: memberImages.amulyaPic,
         linkedin: 'https://www.linkedin.com/in/amulya-dugyala-88a5b429a',
@@ -233,7 +234,7 @@ const batches = [
       },
       {
         name: 'Abhiram',
-        role: 'Member',
+        role: 'Club Head',
         branch: 'Information Technology',
         image: memberImages.abhiramPic,
         linkedin: 'https://www.linkedin.com/in/ravula-abhiram-880b29216',
@@ -307,6 +308,13 @@ const batches = [
         image: memberImages.abhishekPic,
         linkedin: 'http://www.linkedin.com/in/p-abhishek1',
       },
+      {
+          name: 'Hamsika',
+          role: 'Member',
+          branch: 'Information Technology',
+          image: memberImages.hamsikaPic,
+          linkedin: 'https://www.linkedin.com/in/megaji-hamsikaa-352594299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+        },
     ],
   },
   {
@@ -516,56 +524,56 @@ export default function MembersPage() {
       members: [
         {
           name: 'Amulya',
-          role: 'Member',
+          role: 'Club Head',
           branch: 'Information Technology',
           image: memberImages.amulyaPic,
           linkedin: 'https://www.linkedin.com/in/amulya-dugyala-88a5b429a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
         },
         {
           name: 'Aakash',
-          role: 'Member',
+          role: 'Technical Lead',
           branch: 'Information Technology',
           image: memberImages.aakashPic,
           linkedin: 'https://www.linkedin.com/in/aakash-sai-arvapally-143980247',
         },
         {
           name: 'G Sravya',
-          role: 'Member',
+          role: 'Public relations lead',
           branch: 'Information Technology',
           image: memberImages.sravyaPic,
           linkedin: 'https://www.linkedin.com/in/sravya-guruzada-5291a3285?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BPfnYw%2FvuRkaODxtdtJ7AvQ%3D%3D',
         },
         {
           name: 'Akshay',
-          role: 'Member',
+          role: 'Treasurer',
           branch: 'Information Technology',
           image: memberImages.akshayPic,
           linkedin: 'https://www.linkedin.com/in/akshay-kumar-gujjula-2500a1255?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BK9tMPtPDQR6%2Fnkdg6rr0cQ%3D%3D',
         },
         {
           name: 'Laeeq',
-          role: 'Member',
+          role: 'Tech Executive',
           branch: 'Information Technology',
           image: memberImages.laeeqPic,
           linkedin: 'https://www.linkedin.com/in/laeeq-ahmed-528b6a258?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BngW9sPnJT3elwIXTmOuhvw%3D%3D',
         },
         {
           name: 'Raza',
-          role: 'Member',
+          role: 'Creative Head',
           branch: 'Information Technology',
           image: memberImages.razaPic,
           linkedin: '',
         },
         {
           name: 'Harshitha',
-          role: 'Member',
+          role: 'Content Head',
           branch: 'Information Technology',
           image: memberImages.harshithaPic,
           linkedin: 'https://www.linkedin.com/in/harshitha-veeramalla-59a188287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
         },
         {
           name: 'Abhiram',
-          role: 'Member',
+          role: 'Club Head',
           branch: 'Information Technology',
           image: memberImages.abhiramPic,
           linkedin: 'https://www.linkedin.com/in/ravula-abhiram-880b29216',
@@ -638,6 +646,13 @@ export default function MembersPage() {
           branch: 'Information Technology',
           image: memberImages.abhishekPic,
           linkedin: 'http://www.linkedin.com/in/p-abhishek1',
+        },
+          {
+          name: 'Hamsika',
+          role: 'Member',
+          branch: 'Information Technology',
+          image: memberImages.hamsikaPic,
+          linkedin: 'https://www.linkedin.com/in/megaji-hamsikaa-352594299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
         },
       ],
     },
@@ -715,7 +730,7 @@ export default function MembersPage() {
         linkedin: 'https://www.linkedin.com/in/tanuj-alugoju-55777c369',
       },
        {
-        name: 'Trubhuvani',
+        name: 'Tribhuvani',
         role: 'Member',
         branch: 'Information Technology',
         image: memberImages.tribhuvaniPic,
