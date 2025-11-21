@@ -33,7 +33,7 @@ export default function Nav() {
               alt="Tech Tycoons Logo"
               className="h-16 w-16 md:h-20 md:w-20 object-contain"
             />
-            <div className="ml-3 text-xl md:text-2xl font-bold text-gray-800 dark:text-white">
+            <div className="ml-3 text-xl md:text-2xl font-bold text-white">
               Tech Tycoons
             </div>
           </Link>
@@ -41,7 +41,7 @@ export default function Nav() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-gray-800 dark:text-white focus:outline-none"
+            className="md:hidden text-white focus:outline-none"
           >
             <svg
               className="h-6 w-6"
@@ -63,27 +63,27 @@ export default function Nav() {
           {/* Desktop Navigation Links */}
           <ul className="hidden md:flex items-center space-x-6 lg:space-x-10 text-lg font-medium">
             <li>
-              <Link href="/events" className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <Link href="/events" className="text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 Events
               </Link>
             </li>
             <li>
-              <Link href="/gallery" className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <Link href="/gallery" className="text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 Gallery
               </Link>
             </li>
             <li>
-              <Link href="/blogs" className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <Link href="/blogs" className="text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 Blog
               </Link>
             </li>
             <li>
-              <Link href="/members" className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <Link href="/members" className="text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 Members
               </Link>
             </li>
             <li>
-              <Link href="/achievements" className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <Link href="/achievements" className="text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 Achievements
               </Link>
             </li>
@@ -94,27 +94,27 @@ export default function Nav() {
         <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
           <ul className="pt-2 pb-4 space-y-2">
             <li>
-              <Link href="/events" className="block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-blue-600 hover:text-white transition-colors">
+              <Link href="/events" className="block px-4 py-2 text-white hover:bg-blue-600 hover:text-white transition-colors">
                 Events
               </Link>
             </li>
             <li>
-              <Link href="/gallery" className="block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-blue-600 hover:text-white transition-colors">
+              <Link href="/gallery" className="block px-4 py-2 text-white hover:bg-blue-600 hover:text-white transition-colors">
                 Gallery
               </Link>
             </li>
             <li>
-              <Link href="/blogs" className="block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-blue-600 hover:text-white transition-colors">
+              <Link href="/blogs" className="block px-4 py-2 text-white hover:bg-blue-600 hover:text-white transition-colors">
                 Blog
               </Link>
             </li>
             <li>
-              <Link href="/members" className="block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-blue-600 hover:text-white transition-colors">
+              <Link href="/members" className="block px-4 py-2 text-white hover:bg-blue-600 hover:text-white transition-colors">
                 Members
               </Link>
             </li>
             <li>
-              <Link href="/achievements" className="block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-blue-600 hover:text-white transition-colors">
+              <Link href="/achievements" className="block px-4 py-2 text-white hover:bg-blue-600 hover:text-white transition-colors">
                 Achievements
               </Link>
             </li>
