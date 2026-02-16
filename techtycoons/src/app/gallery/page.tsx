@@ -111,6 +111,30 @@ const galleryEvents = [
       "/Images/anime/events/stress3.jpg",
     ],
   },
+  {
+    title: "Event 13: Workshop on C programming",
+    images:[
+      getGoogleDriveDirectUrl("https://drive.google.com/file/d/19dENDdmFVSSukv_93cRA2DvtCR-9bCd4/view?usp=drive_link"),
+      getGoogleDriveDirectUrl("https://drive.google.com/file/d/1MgBiaDVVquxHovzRpd1ow75INCIWpNMU/view?usp=drive_link"),
+      getGoogleDriveDirectUrl("https://drive.google.com/file/d/1U5vZZhYQf2wcGNxC9OuSeF-2iGOPp33H/view?usp=drive_link")
+    ],
+  },
+  {
+    title: "Event 14: Hacker Rank Workshop on C programming",
+    images:[
+      getGoogleDriveDirectUrl("https://drive.google.com/file/d/1cAQ8NvyHU4DLWOVVENkz481tAfBEkgEl/view?usp=drive_link"),
+      getGoogleDriveDirectUrl("https://drive.google.com/file/d/1d6eFB-lh8UVuvq-GHVOeN8SbcYUdn_dB/view?usp=drive_link"),
+      getGoogleDriveDirectUrl("https://drive.google.com/file/d/1NjNtDyNzS18gMUqcSiorl_yUJP872Iu7/view?usp=drive_link"),
+      getGoogleDriveDirectUrl("https://drive.google.com/file/d/1tS42cnFIrgVv0PgaUwI4bpdZTOBSu2Z4/view?usp=drive_link")
+    ],
+  },
+  {
+    title: "Event 15: Full Stack Development",
+    images:[
+      getGoogleDriveDirectUrl("https://drive.google.com/file/d/1QgVfCFOyqSD3g64JfAqKEjsJ6d7hv4aE/view?usp=drive_link"),
+      getGoogleDriveDirectUrl("https://drive.google.com/file/d/1bcq-4NyQbPIVrsUbvumFMuqj__3Xib6Z/view?usp=drive_link"),
+    ],
+  }
 ];
 
 export default function GalleryPage() {
