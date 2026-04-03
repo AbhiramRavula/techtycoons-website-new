@@ -633,13 +633,13 @@ export default function MembersPage() {
           image: memberImages.krithikaPic,
           linkedin: 'https://www.linkedin.com/in/krithika-panjarla-1a368a340?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
         },
-        {
-          name: 'Peddapuli Lakshya',
-          role: 'Member',
-          branch: 'Information Technology',
-          image: memberImages.lakshyaPic,
-          linkedin: 'https://www.linkedin.com/in/lakshya-peddapuli-711689340',
-        },
+        // {
+        //   name: 'Peddapuli Lakshya',
+        //   role: 'Member',
+        //   branch: 'Information Technology',
+        //   image: memberImages.lakshyaPic,
+        //   linkedin: 'https://www.linkedin.com/in/lakshya-peddapuli-711689340',
+        // },
         {
           name: 'P Abhishek',
           role: 'Member',
