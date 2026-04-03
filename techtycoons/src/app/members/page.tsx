@@ -253,6 +253,13 @@ const batches = [
         linkedin: 'https://www.linkedin.com/in/ajish-dommeti-184501279',
       },
       {
+        name: 'Sruthi M',
+        role: 'Vice President',
+        branch: 'Information Technology',
+        image: memberImages.sruthiPic,
+        linkedin: 'https://www.linkedin.com/in/sruthi-m-478b86332',
+      },
+      {
         name: 'N Shiva Kumar',
         role: 'Member',
         branch: 'Information Technology',
@@ -279,13 +286,6 @@ const batches = [
         branch: 'Information Technology',
         image: memberImages.vidulaPic,
         linkedin: 'https://www.linkedin.com/in/vidula-raghavendra-307aa330b/',
-      },
-      {
-        name: 'Sruthi M',
-        role: 'Vice President',
-        branch: 'Information Technology',
-        image: memberImages.sruthiPic,
-        linkedin: 'https://www.linkedin.com/in/sruthi-m-478b86332',
       },
       {
         name: 'Krithika',
