@@ -247,7 +247,7 @@ const batches = [
     members: [
       {
         name: 'Anish Dommeti',
-        role: 'Member',
+        role: 'President',
         branch: 'Information Technology',
         image: memberImages.anishPic,
         linkedin: 'https://www.linkedin.com/in/ajish-dommeti-184501279',
@@ -282,7 +282,7 @@ const batches = [
       },
       {
         name: 'Sruthi M',
-        role: 'Member',
+        role: 'Vice President',
         branch: 'Information Technology',
         image: memberImages.sruthiPic,
         linkedin: 'https://www.linkedin.com/in/sruthi-m-478b86332',
@@ -586,7 +586,7 @@ export default function MembersPage() {
       members: [
         {
           name: 'Anish Dommeti',
-          role: 'Member',
+          role: 'President',
           branch: 'Information Technology',
           image: memberImages.anishPic,
           linkedin: 'https://www.linkedin.com/in/ajish-dommeti-184501279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
@@ -621,7 +621,7 @@ export default function MembersPage() {
         },
         {
           name: 'Sruthi M',
-          role: 'Member',
+          role: 'Vice President',
           branch: 'Information Technology',
           image: memberImages.sruthiPic,
           linkedin: 'https://www.linkedin.com/in/sruthi-m-478b86332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
