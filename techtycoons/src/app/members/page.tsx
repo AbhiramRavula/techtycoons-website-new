@@ -592,6 +592,13 @@ export default function MembersPage() {
           linkedin: 'https://www.linkedin.com/in/ajish-dommeti-184501279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
         },
         {
+          name: 'Sruthi M',
+          role: 'Vice President',
+          branch: 'Information Technology',
+          image: memberImages.sruthiPic,
+          linkedin: 'https://www.linkedin.com/in/sruthi-m-478b86332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+        },
+        {
           name: 'N Shiva Kumar',
           role: 'Member',
           branch: 'Information Technology',
@@ -618,13 +625,6 @@ export default function MembersPage() {
           branch: 'Information Technology',
           image: memberImages.vidulaPic,
           linkedin: 'https://www.linkedin.com/in/vidula-raghavendra-307aa330b/',
-        },
-        {
-          name: 'Sruthi M',
-          role: 'Vice President',
-          branch: 'Information Technology',
-          image: memberImages.sruthiPic,
-          linkedin: 'https://www.linkedin.com/in/sruthi-m-478b86332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
         },
         {
           name: 'Krithika',
